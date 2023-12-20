@@ -5,11 +5,11 @@ const PORT = process.env.PORT || 6001;
 
 const productsRoutes = require("./routes/products");
 
-app.get("/", (req, res) => {
+/*app.get("/", (req, res) => {
     res.send("Hi, I am live");
-});
+});*/
 
-app.use("/api/products", productsRoutes);
+app.use("/", productsRoutes);
 
 const start = async () => {
     try {
